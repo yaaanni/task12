@@ -1,5 +1,15 @@
 #include <iostream>
-#include <cmath>
+
+double sqrt (double n) {
+    const double eps=0.0000001;
+    double sq=0;
+    while(sq*sq <n)
+    {
+    sq+=eps;
+    };
+    return sq;
+    }
+
 int main() {
 double a,b,c,x,t,d,t1,t2,x1,x2,x3,x4;
 std::cout << "Введите  a: ";
@@ -10,7 +20,7 @@ std::cout << "Введите  c: ";
 std::cin >> c;
 t = x*x;
 d = sqrt(b*b-4*a*c);
-if (d<0) {
+if (b*b-4*a*c<0) {
     std::cout << "error";
 } else {
 t1 = (d-b)/(2*a);
