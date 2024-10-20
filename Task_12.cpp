@@ -24,6 +24,10 @@ int main () {
         std::cout << "Все корни";
         exit(0);   
         }
+    if (a==0&&b==0) {
+        std::cout << " Корень: 0";
+        exit(0);
+    }
     if (a == 0){
         std::cout << "error";
     } else {
