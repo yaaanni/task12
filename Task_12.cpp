@@ -28,6 +28,14 @@ int main () {
         std::cout << " Корень: 0";
         exit(0);
     }
+    if (a==0&&c==0) {
+        std::cout << " Корень: 0";
+        exit(0);
+    }
+    if (a==c&&b==0) {
+        std::cout << " Корень: 0";
+        exit(0);
+    }
     if (a == 0){
         std::cout << "error";
     } else {
