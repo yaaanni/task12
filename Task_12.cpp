@@ -41,12 +41,12 @@ if(c==0) {
 t = x*x;
 d = sqrt(b*b-4*a*c);
 if ((b*b-4*a*c)<0) {
-    std::cout << "error";
+    std::cout << "Нет корней";
 } else {
 t1 = (d-b)/(2*a);
 t2 = (-d-b)/(2*a);
 if(t1<0 && t2< 0) {
-    std::cout << "error";
+    std::cout << "Нет корней";
     exit(0);
 }
 if (t1 < 0) {
@@ -60,7 +60,7 @@ x2 = -sqrt(t1);
 std::cout << "Значение первого корня уравнения: " << x1 << std::endl;
 std::cout << "Значение второго корня уравнения: " << x2 << std::endl;
 } else {
-    x1 = sqrt(t1);
+x1 = sqrt(t1);
 x2 = -sqrt(t1);
 std::cout << "Значение первого корня уравнения: "<< x1 << std::endl;
 std::cout << "Значение второго корня уравнения: "<< x2 << std::endl;
