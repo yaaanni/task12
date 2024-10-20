@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 
 double sqrt (double n) {
     const double eps=0.0000001;
@@ -22,13 +23,32 @@ if (a==0&&b==0&&c==0){
     std::cout << "Все корни";
     exit(0);
 }
+if (a==0&&b==0&&c!=0) {
+    std::cout << "Нет корней";
+    exit(0);
+}
+if (c==0&&b==0) {
+        std::cout << " Корень: 0";
+        exit(0);
+    }
+if (a==0&&c==0) {
+        std::cout << " Корень: 0";
+        exit(0);
+    }
+if(c==0) {
+    std::cout << "Корень 0\n";
+}
 t = x*x;
 d = sqrt(b*b-4*a*c);
-if (b*b-4*a*c<0) {
+if ((b*b-4*a*c)<0) {
     std::cout << "error";
 } else {
 t1 = (d-b)/(2*a);
 t2 = (-d-b)/(2*a);
+if(t1<0 && t2< 0) {
+    std::cout << "error";
+    exit(0);
+}
 if (t1 < 0) {
 x1 = sqrt(t2);
 x2 = -sqrt(t2);
