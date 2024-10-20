@@ -18,6 +18,10 @@ std::cout << "Введите  b: ";
 std::cin >> b;
 std::cout << "Введите  c: ";
 std::cin >> c;
+if (a==0&&b==0&&c==0){
+    std::cout << "Все корни";
+    exit(0);
+}
 t = x*x;
 d = sqrt(b*b-4*a*c);
 if (b*b-4*a*c<0) {
