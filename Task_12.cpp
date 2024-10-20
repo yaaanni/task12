@@ -20,6 +20,10 @@ int main () {
     std::cin >> b;
     std::cout << "Введите значение c: ";
     std::cin >> c;
+    if (a==0&&b==0&&c==0) {
+        std::cout << "Все корни";
+        exit(0);   
+        }
     if (a == 0){
         std::cout << "error";
     } else {
