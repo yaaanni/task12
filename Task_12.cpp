@@ -40,7 +40,7 @@ int main () {
     else {
     d1 = sqrt(b*b-4*a*c+8*a*a);
     if ((b*b-4*a*c+8*a*a)<0) {
-        std::cout << "Нет корней";
+        std::cout << "Нет корней\n";
     } else if (d1 == 0) {
         y1 = -b/2/a;
         d2 = sqrt(y1*y1-4);
