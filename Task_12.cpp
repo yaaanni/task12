@@ -22,7 +22,7 @@ int main () {
     std::cin >> c;
     if (a==0&&b==0&&c==0) {
         std::cout << "Все корни";
-        exit(0);   
+        exit(0);  
         }
     if (a==0&&b==0) {
         std::cout << " Корень: 0";
@@ -36,17 +36,15 @@ int main () {
         std::cout << " Корень: 0";
         exit(0);
     }
-    if (a == 0){
-        std::cout << "error";
-    } else {
+    //if (a == 0){
+    else {
     d1 = sqrt(b*b-4*a*c+8*a*a);
     if ((b*b-4*a*c+8*a*a)<0) {
-        std::cout << "error";
+        std::cout << "Нет корней";
     } else if (d1 == 0) {
         y1 = -b/2/a;
         d2 = sqrt(y1*y1-4);
         if ((y1*y1-4) < 0) {
-            std::cout << "error";
         } else if (d2 == 0) {
             x1 = y1/2;
             std::cout << "x1: " << x1;
@@ -62,7 +60,7 @@ int main () {
         
         d2 = sqrt(y1*y1-4);
         if ((y1*y1-4) < 0) {
-            std::cout << "error";
+            std::cout << "Нет корней";
         } else if (d2 == 0) {
             x1 = y1/2;
             std::cout << "x1: " << x1;
@@ -74,7 +72,6 @@ int main () {
 
         d3 = sqrt(y2*y2-4);
         if ((y2*y2-4) < 0) {
-            std::cout << "error";
         } else if (d3 == 0) {
             x3 = y2/2;
             std::cout << "x3: " << x3;
@@ -87,11 +84,10 @@ int main () {
     }
     
 }
-if (x1||x2||x3||x4 == 0) {
-        std::cout << "error";
-    } else {
-        std::cout << "x1: " << x1 << std::endl << "x2: " << x2 << std::endl <<
-        "x3: " << x3 << std::endl << "x4: " << x4 << std::endl;
-    }
+//if (x1||x2||x3||x4 == 0) {
+  //  } else {
+    //    std::cout << "x1: " << x1 << std::endl << "x2: " << x2 << std::endl <<
+      //  "x3: " << x3 << std::endl << "x4: " << x4 << std::endl;
+    //}
 return 0;
 }
