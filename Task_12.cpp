@@ -36,7 +36,6 @@ int main () {
         std::cout << " Корень: 0";
         exit(0);
     }
-    //if (a == 0){
     else {
     d1 = sqrt(b*b-4*a*c+8*a*a);
     if ((b*b-4*a*c+8*a*a)<0) {
@@ -60,7 +59,7 @@ int main () {
         
         d2 = sqrt(y1*y1-4);
         if ((y1*y1-4) < 0) {
-            std::cout << "Нет корней";
+            std::cout << "Нет корней" << std::endl;
         } else if (d2 == 0) {
             x1 = y1/2;
             std::cout << "x1: " << x1;
@@ -84,10 +83,5 @@ int main () {
     }
     
 }
-//if (x1||x2||x3||x4 == 0) {
-  //  } else {
-    //    std::cout << "x1: " << x1 << std::endl << "x2: " << x2 << std::endl <<
-      //  "x3: " << x3 << std::endl << "x4: " << x4 << std::endl;
-    //}
 return 0;
 }
