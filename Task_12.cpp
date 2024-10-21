@@ -1,5 +1,4 @@
 #include <iostream>
-#include <iomanip>
 
 double sqrt (double n) {
     const double eps=0.0000001;
